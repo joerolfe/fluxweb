@@ -64,7 +64,7 @@ export default function StorePage() {
       <Navbar />
 
       {/* ── HERO ── */}
-      <section id="top" className="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-6">
+      <section id="top" className="relative min-h-[45vh] sm:min-h-[60vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-4 sm:gap-6">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <motion.div animate={{ y: [0, -16, 0] }} transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
             className="w-[280px] h-[280px] sm:w-[600px] sm:h-[600px] bg-blue-500/[0.07] rounded-full blur-3xl" />
@@ -76,12 +76,12 @@ export default function StorePage() {
         </motion.div>
 
         <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.1 }}
-          className="text-5xl sm:text-6xl md:text-8xl font-semibold tracking-tight leading-tight">
+          className="text-4xl sm:text-6xl md:text-8xl font-semibold tracking-tight leading-tight">
           Build a Brand<br /><span className="text-blue-400">Like FluxFut.</span>
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.25 }}
-          className="text-lg sm:text-xl md:text-2xl text-blue-100/70 max-w-2xl">
+          className="text-base sm:text-xl md:text-2xl text-blue-100/70 max-w-2xl">
           The exact blueprint used to build FluxFut from zero — content strategy, platform setup, community building and monetisation.
         </motion.p>
 
@@ -108,11 +108,11 @@ export default function StorePage() {
       <SectionDivider />
 
       {/* ── PRODUCT CARD ── */}
-      <section id="product" className="py-24 px-4 sm:px-6">
+      <section id="product" className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-4">What's Inside</h2>
-            <p className="text-center text-blue-100/50 mb-16 max-w-xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">What's Inside</h2>
+            <p className="text-center text-blue-100/50 mb-8 sm:mb-16 max-w-xl mx-auto">
               A complete, no-fluff roadmap for building a content brand from scratch.
             </p>
           </FadeIn>
@@ -189,7 +189,7 @@ export default function StorePage() {
       <SectionDivider />
 
       {/* ── WHO IT'S FOR ── */}
-      <section className="py-16 px-4 sm:px-6">
+      <section className="py-8 sm:py-16 px-4 sm:px-6">
         <FadeIn>
           <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
@@ -210,10 +210,10 @@ export default function StorePage() {
       <SectionDivider />
 
       {/* ── FAQ ── */}
-      <section className="py-24 px-4 sm:px-6">
+      <section className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <FadeIn>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-16">FAQs</h2>
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-8 sm:mb-16">FAQs</h2>
           </FadeIn>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
@@ -226,7 +226,7 @@ export default function StorePage() {
       <SectionDivider />
 
       {/* ── FINAL CTA ── */}
-      <section className="py-24 px-4 sm:px-6 text-center border-t border-blue-400/10">
+      <section className="py-12 sm:py-24 px-4 sm:px-6 text-center border-t border-blue-400/10">
         <FadeIn>
           <h2 className="text-4xl sm:text-5xl font-semibold mb-4">
             Ready to Build Your Brand?
@@ -241,7 +241,7 @@ export default function StorePage() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="py-16 border-t border-blue-400/10 px-4 sm:px-6">
+      <footer className="py-10 sm:py-16 border-t border-blue-400/10 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>

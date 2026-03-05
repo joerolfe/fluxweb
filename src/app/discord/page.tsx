@@ -57,7 +57,7 @@ export default function DiscordPage() {
       <Navbar />
 
       {/* HERO */}
-      <section id="top" className="relative min-h-[55vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-6">
+      <section id="top" className="relative min-h-[40vh] sm:min-h-[55vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-4 sm:gap-6">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <motion.div animate={{ y:[0,-16,0] }} transition={{ duration:14, repeat:Infinity, ease:"easeInOut" }}
             className="w-[280px] h-[280px] sm:w-[500px] sm:h-[500px] bg-blue-500/[0.07] rounded-full blur-3xl" />
@@ -67,11 +67,11 @@ export default function DiscordPage() {
           <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" /> Community
         </motion.div>
         <motion.h1 initial={{ opacity:0, y:24 }} animate={{ opacity:1, y:0 }} transition={{ duration:1, delay:0.1 }}
-          className="text-5xl sm:text-6xl md:text-8xl font-semibold tracking-tight leading-tight">
+          className="text-4xl sm:text-6xl md:text-8xl font-semibold tracking-tight leading-tight">
           Join the<br /><span className="text-blue-400">Flux Discord.</span>
         </motion.h1>
         <motion.p initial={{ opacity:0, y:24 }} animate={{ opacity:1, y:0 }} transition={{ duration:1, delay:0.25 }}
-          className="text-lg sm:text-xl md:text-2xl text-blue-100/70 max-w-2xl">
+          className="text-base sm:text-xl md:text-2xl text-blue-100/70 max-w-2xl">
           The most active EAFC community on Discord. Free access or full premium — your choice.
         </motion.p>
         <motion.div initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} transition={{ duration:1, delay:0.4 }}
@@ -84,7 +84,7 @@ export default function DiscordPage() {
       <SectionDivider />
 
       {/* STATS */}
-      <section id="stats" className="py-16 px-4 sm:px-6">
+      <section id="stats" className="py-8 sm:py-16 px-4 sm:px-6">
         <FadeIn>
           <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
@@ -93,7 +93,7 @@ export default function DiscordPage() {
               { val:24, suffix:"/7", label:"Active Chat" },
               { val:100, suffix:"%", label:"EAFC Focused" },
             ].map((s) => (
-              <div key={s.label} className="p-5 sm:p-7 rounded-2xl border border-blue-400/10 bg-gradient-to-b from-blue-500/[0.07] to-transparent text-center hover:border-blue-400/25 transition-all duration-300">
+              <div key={s.label} className="p-4 sm:p-7 rounded-2xl border border-blue-400/10 bg-gradient-to-b from-blue-500/[0.07] to-transparent text-center hover:border-blue-400/25 transition-all duration-300">
                 <p className="text-2xl sm:text-3xl font-semibold text-white mb-1">
                   <CountUp target={s.val} suffix={s.suffix} />
                 </p>
@@ -107,11 +107,11 @@ export default function DiscordPage() {
       <SectionDivider />
 
       {/* TIER COMPARISON */}
-      <section id="tiers" className="py-24 px-4 sm:px-6">
+      <section id="tiers" className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-4">Pick Your Tier</h2>
-            <p className="text-center text-blue-100/50 mb-16 max-w-xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">Pick Your Tier</h2>
+            <p className="text-center text-blue-100/50 mb-8 sm:mb-16 max-w-xl mx-auto">
               Start free, upgrade when you're ready. Premium unlocks everything.
             </p>
           </FadeIn>
@@ -191,7 +191,7 @@ export default function DiscordPage() {
       <SectionDivider />
 
       {/* WHY PREMIUM CALLOUT */}
-      <section className="py-16 px-4 sm:px-6">
+      <section className="py-8 sm:py-16 px-4 sm:px-6">
         <FadeIn>
           <div className="max-w-4xl mx-auto relative rounded-3xl border border-blue-400/20 bg-gradient-to-br from-blue-500/[0.1] via-transparent to-transparent p-10 sm:p-14 text-center overflow-hidden">
             <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
@@ -215,10 +215,10 @@ export default function DiscordPage() {
       <SectionDivider />
 
       {/* ── FAQ ── */}
-      <section id="faq" className="py-24 px-4 sm:px-6">
+      <section id="faq" className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <FadeIn>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-4">FAQs</h2>
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">FAQs</h2>
             <p className="text-center text-blue-100/50 mb-16 max-w-md mx-auto">
               Everything you need to know before joining.
             </p>
@@ -263,7 +263,7 @@ export default function DiscordPage() {
       <SectionDivider />
 
       {/* FOOTER CTA */}
-      <section className="py-24 px-4 sm:px-6 text-center border-t border-blue-400/10">
+      <section className="py-12 sm:py-24 px-4 sm:px-6 text-center border-t border-blue-400/10">
         <FadeIn>
           <h2 className="text-4xl sm:text-5xl font-semibold mb-4">Ready to Join?</h2>
           <p className="text-blue-100/60 text-lg mb-10 max-w-md mx-auto">
@@ -277,7 +277,7 @@ export default function DiscordPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-16 border-t border-blue-400/10 px-4 sm:px-6">
+      <footer className="py-10 sm:py-16 border-t border-blue-400/10 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>

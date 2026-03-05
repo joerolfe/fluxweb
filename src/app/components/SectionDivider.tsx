@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function SectionDivider() {
   return (
-    <div className="flex justify-center py-10">
+    <div className="flex justify-center py-4 sm:py-8">
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: 120 }}

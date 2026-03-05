@@ -67,17 +67,17 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-8">
+      <section className="relative min-h-[70vh] sm:min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 gap-5 sm:gap-8">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <motion.div animate={{ y:[0,-20,0] }} transition={{ duration:18, repeat:Infinity, ease:"easeInOut" }}
             className="w-[300px] h-[300px] sm:w-[700px] sm:h-[700px] bg-blue-500/[0.08] rounded-full blur-3xl" />
         </div>
         <motion.h1 initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{ duration:1.2 }}
-          className="relative text-5xl sm:text-6xl md:text-8xl font-semibold tracking-tight leading-tight">
+          className="relative text-4xl sm:text-6xl md:text-8xl font-semibold tracking-tight leading-tight">
           CONTROL THE META.
         </motion.h1>
         <motion.p initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.3, duration:1.2 }}
-          className="relative text-lg sm:text-xl md:text-2xl text-blue-100/80 max-w-2xl">
+          className="relative text-base sm:text-xl md:text-2xl text-blue-100/80 max-w-2xl">
           Elite EAFC tactics, market strategies and competitive gameplay.
         </motion.p>
         <motion.div initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.5, duration:1 }}
@@ -90,7 +90,7 @@ export default function Home() {
       <SectionDivider />
 
       {/* LIVE COUNTERS */}
-      <section className="py-20 px-4 sm:px-6">
+      <section className="py-10 sm:py-20 px-4 sm:px-6">
         <FadeIn>
           <div className="max-w-5xl mx-auto">
             <p className="text-center text-xs text-blue-300/50 tracking-widest uppercase mb-12">Combined community reach</p>
@@ -119,11 +119,11 @@ export default function Home() {
       <SectionDivider />
 
       {/* FLUXFUT NETWORK */}
-      <section className="py-24 px-4 sm:px-6">
+      <section className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <FadeIn>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-4">The FluxFut Network</h2>
-            <p className="text-center text-blue-100/50 text-lg mb-16 max-w-xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">The FluxFut Network</h2>
+            <p className="text-center text-blue-100/50 text-base mb-8 sm:mb-16 max-w-xl mx-auto">
               Six channels. One mission. Follow everywhere to stay ahead of the meta.
             </p>
           </FadeIn>
@@ -167,11 +167,11 @@ export default function Home() {
       <SectionDivider />
 
       {/* JOIN THE COMMUNITY */}
-      <section className="py-24 px-4 sm:px-6">
+      <section className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-center mb-4">Join The Community</h2>
-            <p className="text-center text-blue-100/50 text-lg mb-16 max-w-xl mx-auto">
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">Join The Community</h2>
+            <p className="text-center text-blue-100/50 text-base mb-8 sm:mb-16 max-w-xl mx-auto">
               Two tiers. One elite EAFC community. Pick the access that fits you.
             </p>
           </FadeIn>
@@ -237,7 +237,7 @@ export default function Home() {
       <SectionDivider />
 
       {/* CTA */}
-      <section className="py-32 px-4 sm:px-6 text-center border-t border-blue-400/10">
+      <section className="py-14 sm:py-32 px-4 sm:px-6 text-center border-t border-blue-400/10">
         <FadeIn>
           <h2 className="text-4xl sm:text-5xl font-semibold mb-6">Ready to Dominate EAFC?</h2>
           <p className="text-blue-100/70 text-lg mb-10 max-w-xl mx-auto">
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-16 border-t border-blue-400/10 px-4 sm:px-6">
+      <footer className="py-10 sm:py-16 border-t border-blue-400/10 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>
