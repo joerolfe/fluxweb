@@ -9,7 +9,7 @@ import Particles from "../components/Particles";
 import Button from "../components/Button";
 import PageTransition from "../components/PageTransition";
 
-const GUMROAD = "https://fluxfut.gumroad.com"; // ← update to direct product link when live
+const GUMROAD = "https://fluxfut.gumroad.com/l/blueprint"; // ← update to direct product link when live
 
 const features = [
   "How to pick your niche & content pillars",
@@ -99,7 +99,7 @@ export default function StorePage() {
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}
               className="flex items-center gap-3 px-8 py-4 rounded-2xl bg-blue-500 text-white font-semibold text-lg hover:bg-blue-400 transition-all duration-200 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
               <GumroadIcon className="w-5 h-5" />
-              Get the Guide · £10–£25
+              Get the Guide · £15
             </motion.div>
           </a>
         </motion.div>
@@ -144,7 +144,7 @@ export default function StorePage() {
                   <p className="text-blue-400/80 text-sm mb-6">The FluxFut Blueprint</p>
 
                   <div className="flex items-end gap-3 mb-6">
-                    <p className="text-5xl font-semibold text-white">£10<span className="text-2xl text-blue-100/40">–£25</span></p>
+                    <p className="text-5xl font-semibold text-white">£15</p>
                   </div>
 
                   <p className="text-blue-100/60 text-sm leading-relaxed mb-8">

@@ -22,7 +22,7 @@ const LINKS = {
   twitter:        "https://twitter.com/fluxfut",
   discordFree:    "https://discord.gg/HJCn7YZCC3",
   discordPremium: "https://whop.com/fluxfut/fluxfut-premium/",
-  gumroad:        "https://fluxfut.gumroad.com",
+  gumroad:        "https://fluxfut.gumroad.com/l/blueprint",
   whop:           "https://whop.com/fluxfut/fluxfut-premium/",
 };
 

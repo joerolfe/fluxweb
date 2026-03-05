@@ -3,8 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// ── BEEHIIV ────────────────────────────────────────────────────────────────
+// 1. Go to app.beehiiv.com → Settings → API → copy your API key
+// 2. Go to Publications → copy your Publication ID (pub_xxxxxxxx)
+// 3. Add both to your .env.local:
+//    BEEHIIV_API_KEY=your_api_key_here
+//    BEEHIIV_PUBLICATION_ID=pub_xxxxxxxx
+// ──────────────────────────────────────────────────────────────────────────
+
 export default function EmailCapture() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail]   = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -18,23 +26,37 @@ export default function EmailCapture() {
     setStatus("loading");
     setErrorMsg("");
 
-    // Simulated submit — replace with your email provider (Mailchimp, ConvertKit, etc.)
-    // Example: await fetch("/api/subscribe", { method: "POST", body: JSON.stringify({ email }) })
-    await new Promise((r) => setTimeout(r, 1000));
-    setStatus("success");
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.message || "Something went wrong.");
+      }
+
+      setStatus("success");
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "Something went wrong. Please try again.";
+      setErrorMsg(message);
+      setStatus("error");
+    }
   };
 
   return (
-    <section className="py-24 px-4 sm:px-6">
+    <section className="py-12 sm:py-24 px-4 sm:px-6">
       <div className="max-w-2xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
-          className="relative rounded-3xl border border-blue-400/15 bg-gradient-to-br from-blue-500/[0.09] via-transparent to-transparent p-10 sm:p-14 text-center overflow-hidden"
+          className="relative rounded-3xl border border-blue-400/15 bg-gradient-to-br from-blue-500/[0.09] via-transparent to-transparent p-8 sm:p-14 text-center overflow-hidden"
         >
-          {/* Corner glows */}
           <div className="absolute top-0 left-0 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-48 h-48 bg-blue-400/[0.07] rounded-full blur-3xl translate-x-1/2 translate-y-1/2 pointer-events-none" />
 
