@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const DISCORD_FREE = "https://discord.gg/REPLACE"; // ← update this
+const DISCORD_FREE = "https://discord.gg/HJCn7YZCC3"; // ← update this
 
 export default function StickyDiscord() {
   const [visible, setVisible] = useState(false);

@@ -48,16 +48,14 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "backdrop-blur-xl bg-black/20 border-b border-blue-400/10" : "bg-transparent"
+        className={`fixed top-0 z-50 w-full transition-colors duration-300 ${
+          scrolled ? "backdrop-blur-xl bg-[#020617]/70 border-b border-blue-400/10" : "bg-transparent border-b border-transparent"
         }`}
         onMouseLeave={() => setOpenMenu(null)}
       >
         <div
           ref={navRef}
-          className={`max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 transition-all duration-300 ${
-            scrolled ? "py-2" : "py-4"
-          }`}
+          className="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 py-4"
         >
           {/* Logo */}
           <Link
@@ -65,7 +63,7 @@ export default function Navbar() {
             className="group"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <div className={`flex items-center gap-3 transition-all duration-300 cursor-pointer ${scrolled ? "scale-90" : "scale-100"}`}>
+            <div className="flex items-center gap-3 cursor-pointer">
               <Image
                 src="/fluxfut.logo.png"
                 alt="FluxFut Logo"
@@ -99,7 +97,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <a
-            href="https://discord.gg/REPLACE"
+            href="https://discord.gg/HJCn7YZCC3"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-500/15 border border-blue-400/25 text-blue-200 text-sm font-medium hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-all duration-200"
@@ -142,14 +140,14 @@ export default function Navbar() {
               transition={{ duration: 0.18 }}
               className="hidden md:block absolute top-full left-0 w-full backdrop-blur-xl bg-black/30 border-t border-blue-400/10"
             >
-              <div className="max-w-6xl mx-auto px-6 py-4">
+              <div className="max-w-6xl mx-auto px-6 py-4 flex justify-center">
                 <motion.div
                   key={openMenu}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="mx-auto w-fit grid grid-cols-3 gap-x-10 gap-y-2 text-center"
+                  className="flex gap-10 text-center"
                 >
                   {menuItems[openMenu as keyof typeof menuItems].map((item) => (
                     <Link
@@ -220,7 +218,7 @@ export default function Navbar() {
               {/* Bottom CTA */}
               <div className="px-4 py-6 border-t border-blue-400/10 space-y-3">
                 <a
-                  href="https://discord.gg/REPLACE"
+                  href="https://discord.gg/HJCn7YZCC3"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}

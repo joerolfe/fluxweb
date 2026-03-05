@@ -14,7 +14,7 @@ import CountUp from "../components/CountUp";
 
 // ── REPLACE THESE ──────────────────────────────────────────────────────────
 const LINKS = {
-  discordFree:    "https://discord.gg/REPLACE",
+  discordFree:    "https://discord.gg/HJCn7YZCC3",
   discordPremium: "https://whop.com/REPLACE",
 };
 // ──────────────────────────────────────────────────────────────────────────
