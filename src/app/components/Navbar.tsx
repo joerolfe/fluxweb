@@ -35,9 +35,7 @@ export default function Navbar() {
       { label: "Instagram", href: "/socials#instagram" },
     ],
     store: [
-      { label: "1-on-1 Coaching", href: "/store#coaching" },
-      { label: "Video Courses",   href: "/store#courses" },
-      { label: "Trading Guides",  href: "/store#trading" },
+      { label: "Brand Blueprint", href: "/store#product" },
     ],
     discord: [
       { label: "Free Access",    href: "/discord#free" },
