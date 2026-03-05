@@ -21,9 +21,9 @@ const LINKS = {
   youtube:        "https://youtube.com/@fluxfut",
   twitter:        "https://twitter.com/fluxfut",
   discordFree:    "https://discord.gg/HJCn7YZCC3",
-  discordPremium: "https://whop.com/REPLACE",
+  discordPremium: "https://whop.com/fluxfut/fluxfut-premium/",
   gumroad:        "https://fluxfut.gumroad.com",
-  whop:           "https://whop.com/REPLACE",
+  whop:           "https://whop.com/fluxfut/fluxfut-premium/",
 };
 
 const socials = [
