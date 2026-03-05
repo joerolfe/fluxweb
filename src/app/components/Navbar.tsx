@@ -21,17 +21,24 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const menuItems = {
+  const menuItems: Record<string, { label: string; href: string }[]> = {
     socials: [
-      "TikTok – Tactics",
-      "TikTok – Trading",
-      "TikTok – Competitive",
-      "Instagram",
-      "YouTube",
-      "Twitter / X",
+      { label: "TikTok – Tactics",     href: "/socials#tiktok-tactics" },
+      { label: "TikTok – Trading",     href: "/socials#tiktok-trading" },
+      { label: "TikTok – Competitive", href: "/socials#tiktok-comp" },
+      { label: "Instagram",            href: "/socials#instagram" },
+      { label: "YouTube",              href: "/socials#youtube" },
+      { label: "Twitter / X",          href: "/socials#twitter" },
     ],
-    store: ["All Digital Products"],
-    discord: ["Free Access", "Premium Access"],
+    store: [
+      { label: "1-on-1 Coaching",  href: "/store#coaching" },
+      { label: "Video Courses",    href: "/store#courses" },
+      { label: "Trading Guides",   href: "/store#trading" },
+    ],
+    discord: [
+      { label: "Free Access",    href: "/discord#free" },
+      { label: "Premium Access", href: "/discord#premium" },
+    ],
   };
 
   return (
@@ -148,11 +155,11 @@ export default function Navbar() {
                 {menuItems[openMenu as keyof typeof menuItems].map((item) => (
 
                   <Link
-                    key={item}
-                    href={`/${openMenu}`}
+                    key={item.label}
+                    href={item.href}
                     className="text-blue-100 hover:text-blue-400 transition-colors duration-200 text-sm font-medium"
                   >
-                    {item}
+                    {item.label}
                   </Link>
 
                 ))}
