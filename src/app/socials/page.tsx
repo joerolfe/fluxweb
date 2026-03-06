@@ -16,7 +16,7 @@ const LINKS = {
   fluxevolutions: "https://www.tiktok.com/@fluxevolutions",
   instagram:      "https://instagram.com/fluxfut",   // update if different
   youtube:        "https://youtube.com/@fluxfut",    // update if different
-  twitter:        "https://twitter.com/fluxfut",     // update if different
+  twitter:        "https://x.com/fluxfut1",     // update if different
 };
 
 // TikTok accounts — grouped under one section

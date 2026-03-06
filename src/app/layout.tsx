@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "FluxFut — Control the Meta",
     description: "Elite FC26 tactics, market strategies and competitive gameplay.",
     images: [`${BASE_URL}/og-image.png`],
-    creator: "@FluxFut",
+    creator: "@fluxfut1",
   },
   robots: {
     index: true,

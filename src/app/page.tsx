@@ -19,7 +19,7 @@ const LINKS = {
   tiktokComp:     "https://www.tiktok.com/@fluxevolutions",
   instagram:      "https://instagram.com/fluxfut",
   youtube:        "https://youtube.com/@fluxfut",
-  twitter:        "https://twitter.com/fluxfut",
+  twitter:        "https://x.com/fluxfut1",
   discordFree:    "https://discord.gg/HJCn7YZCC3",
   discordPremium: "https://whop.com/fluxfut/fluxfut-premium/",
   gumroad:        "https://fluxfut.gumroad.com/l/blueprint",
