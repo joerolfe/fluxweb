@@ -135,13 +135,13 @@ export default function SocialsPage() {
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.25 }}
           className="text-base sm:text-xl md:text-2xl text-blue-100/70 max-w-2xl">
-          6 channels. 3 TikTok accounts. One mission — dominate your FC26 knowledge.
+          6 channels across TikTok, YouTube, Instagram and X — all posting daily.
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.4 }}
           className="flex flex-wrap justify-center gap-3 mt-2">
           {["3 TikTok Accounts", "27K+ Followers", "Daily Content"].map((l) => (
             <span key={l} className="px-4 py-1.5 rounded-full bg-white/[0.04] border border-blue-400/15 text-blue-100/60 text-sm">
-              <span className="text-blue-400 mr-1.5 text-xs">◈</span>{l}
+              {l}
             </span>
           ))}
         </motion.div>
@@ -181,7 +181,7 @@ export default function SocialsPage() {
               <h2 className="text-3xl sm:text-5xl font-semibold">TikTok</h2>
             </div>
             <p className="text-center text-blue-100/50 mb-4 max-w-xl mx-auto">
-              Three accounts, each with a distinct focus. Combined 300+ followers across the network.
+              Three accounts, all different. Here's what each one covers.
             </p>
             <p className="text-center text-blue-100/30 text-sm mb-8 sm:mb-12">
               Combined: <span className="text-white font-medium">300+</span> followers
@@ -388,7 +388,7 @@ export default function SocialsPage() {
         <FadeIn>
           <h2 className="text-4xl sm:text-5xl font-semibold mb-4">Never Miss a Drop.</h2>
           <p className="text-blue-100/60 text-lg mb-10 max-w-md mx-auto">
-            Follow every channel. Stay ahead of every patch, promo and meta shift.
+            Follow them all and you'll never be behind.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
@@ -415,7 +415,7 @@ export default function SocialsPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>
-            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">Elite EAFC tactics, trading & competitive gameplay.</p>
+            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">EAFC tactics, trading and content.</p>
           </div>
           <div>
             <h4 className="font-medium text-white mb-4">TikTok</h4>

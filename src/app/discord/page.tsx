@@ -72,7 +72,7 @@ export default function DiscordPage() {
         </motion.h1>
         <motion.p initial={{ opacity:0, y:24 }} animate={{ opacity:1, y:0 }} transition={{ duration:1, delay:0.25 }}
           className="text-base sm:text-xl md:text-2xl text-blue-100/70 max-w-2xl">
-          The most active EAFC community on Discord. Free access or full premium — your choice.
+          The best EAFC Discord around. Join free or go full premium — up to you.
         </motion.p>
         <motion.div initial={{ opacity:0, y:16 }} animate={{ opacity:1, y:0 }} transition={{ duration:1, delay:0.4 }}
           className="flex flex-col sm:flex-row gap-4">
@@ -110,9 +110,9 @@ export default function DiscordPage() {
       <section id="tiers" className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">Pick Your Tier</h2>
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">Free or Premium</h2>
             <p className="text-center text-blue-100/50 mb-8 sm:mb-16 max-w-xl mx-auto">
-              Start free, upgrade when you're ready. Premium unlocks everything.
+              Start free. Upgrade whenever you want.
             </p>
           </FadeIn>
           <StaggerContainer>
@@ -154,7 +154,7 @@ export default function DiscordPage() {
                   <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-400/10 rounded-full blur-xl pointer-events-none" />
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="flex items-center gap-3 mb-6">
-                      <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-medium tracking-wide shadow-[0_0_20px_rgba(59,130,246,0.5)]">✦ Premium</span>
+                      <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-medium tracking-wide shadow-[0_0_20px_rgba(59,130,246,0.5)]">Premium</span>
                       <span className="text-xs text-blue-300/60">Most popular</span>
                     </div>
                     <div className="flex items-end gap-2 mb-2">
@@ -196,10 +196,10 @@ export default function DiscordPage() {
           <div className="max-w-4xl mx-auto relative rounded-3xl border border-blue-400/20 bg-gradient-to-br from-blue-500/[0.1] via-transparent to-transparent p-10 sm:p-14 text-center overflow-hidden">
             <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
             <div className="relative z-10">
-              <p className="text-xs text-blue-300/60 tracking-widest uppercase mb-4">Why Premium?</p>
-              <h2 className="text-3xl sm:text-4xl font-semibold mb-4">The edge is in the details.</h2>
+              <p className="text-xs text-blue-300/60 tracking-widest uppercase mb-4">Why go Premium?</p>
+              <h2 className="text-3xl sm:text-4xl font-semibold mb-4">Free is great. Premium is everything.</h2>
               <p className="text-blue-100/60 max-w-lg mx-auto mb-8">
-                Free gives you the community. Premium gives you the tools. Live alerts, private channels, coaching and tactics packs — everything that separates good players from elite ones.
+                Free gets you into the community. Premium gets you the actual tools — live alerts, private channels, coaching and tactics packs. The difference shows up fast.
               </p>
               <a href={LINKS.discordPremium} target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{ scale:1.04 }} whileTap={{ scale:0.97 }}
@@ -220,7 +220,7 @@ export default function DiscordPage() {
           <FadeIn>
             <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">FAQs</h2>
             <p className="text-center text-blue-100/50 mb-16 max-w-md mx-auto">
-              Everything you need to know before joining.
+              Common questions answered.
             </p>
           </FadeIn>
           <StaggerContainer>
@@ -265,9 +265,9 @@ export default function DiscordPage() {
       {/* FOOTER CTA */}
       <section className="py-12 sm:py-24 px-4 sm:px-6 text-center border-t border-blue-400/10">
         <FadeIn>
-          <h2 className="text-4xl sm:text-5xl font-semibold mb-4">Ready to Join?</h2>
+          <h2 className="text-4xl sm:text-5xl font-semibold mb-4">Come join us.</h2>
           <p className="text-blue-100/60 text-lg mb-10 max-w-md mx-auto">
-            Start free, upgrade when you want. The FluxFut Discord is where the best players learn fastest.
+            It's free to start. Most people upgrade within the first week.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href={LINKS.discordFree} target="_blank" rel="noopener noreferrer"><Button>Join Free Discord</Button></a>
@@ -281,7 +281,7 @@ export default function DiscordPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>
-            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">Elite EAFC tactics, trading & competitive gameplay.</p>
+            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">EAFC tactics, trading and content.</p>
           </div>
           <div>
             <h4 className="font-medium text-white mb-4">Community</h4>

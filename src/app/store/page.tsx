@@ -72,7 +72,7 @@ export default function StorePage() {
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-400/20 bg-blue-500/10 text-blue-300 text-xs font-medium tracking-widest uppercase">
-          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" /> Digital Guide · On Gumroad
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" /> Digital Guide on Gumroad
         </motion.div>
 
         <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.1 }}
@@ -89,7 +89,7 @@ export default function StorePage() {
           className="flex flex-wrap justify-center gap-3">
           {["Instant PDF Download", "Beginner Friendly", "Free Lifetime Updates"].map((l) => (
             <span key={l} className="px-4 py-1.5 rounded-full bg-white/[0.04] border border-blue-400/15 text-blue-100/60 text-sm">
-              <span className="text-blue-400 mr-1.5 text-xs">◈</span>{l}
+              {l}
             </span>
           ))}
         </motion.div>
@@ -113,7 +113,7 @@ export default function StorePage() {
           <FadeIn>
             <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">What's Inside</h2>
             <p className="text-center text-blue-100/50 mb-8 sm:mb-16 max-w-xl mx-auto">
-              A complete, no-fluff roadmap for building a content brand from scratch.
+              Everything that actually went into building FluxFut — no theory, just what worked.
             </p>
           </FadeIn>
 
@@ -133,7 +133,7 @@ export default function StorePage() {
                       <BrandIcon />
                     </div>
                     <span className="px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-medium shadow-[0_0_20px_rgba(59,130,246,0.4)]">
-                      ✦ New Release
+                      New Release
                     </span>
                   </div>
 
@@ -232,7 +232,7 @@ export default function StorePage() {
             Ready to Build Your Brand?
           </h2>
           <p className="text-blue-100/60 text-lg mb-10 max-w-md mx-auto">
-            Get the exact blueprint. Instant download. Start today.
+            Download it, follow the steps. That's it.
           </p>
           <a href={GUMROAD} target="_blank" rel="noopener noreferrer">
             <Button>Get the Guide on Gumroad →</Button>
@@ -245,7 +245,7 @@ export default function StorePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>
-            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">Elite EAFC tactics, trading & competitive gameplay.</p>
+            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">EAFC tactics, trading and content.</p>
           </div>
           <div>
             <h4 className="font-medium text-white mb-4">Products</h4>

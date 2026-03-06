@@ -78,7 +78,7 @@ export default function Home() {
         </motion.h1>
         <motion.p initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.3, duration:1.2 }}
           className="relative text-base sm:text-xl md:text-2xl text-blue-100/80 max-w-2xl">
-          Elite EAFC tactics, market strategies and competitive gameplay.
+          Tactics, trading and the best EAFC content — all in one place.
         </motion.p>
         <motion.div initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} transition={{ delay:0.5, duration:1 }}
           className="flex flex-col sm:flex-row gap-4">
@@ -93,7 +93,7 @@ export default function Home() {
       <section className="py-10 sm:py-20 px-4 sm:px-6">
         <FadeIn>
           <div className="max-w-5xl mx-auto">
-            <p className="text-center text-xs text-blue-300/50 tracking-widest uppercase mb-12">Combined community reach</p>
+            <p className="text-center text-xs text-blue-300/50 tracking-widest uppercase mb-12">Across all platforms</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {[
                 { label:"TikTok", target:300, suffix:"+" },
@@ -110,7 +110,7 @@ export default function Home() {
               ))}
             </div>
             <p className="text-center text-blue-100/40 text-sm mt-8">
-              Trusted by <span className="text-white font-medium">27,300+</span> EAFC players worldwide
+              <span className="text-white font-medium">27,300+</span> EAFC players already in.
             </p>
           </div>
         </FadeIn>
@@ -124,7 +124,7 @@ export default function Home() {
           <FadeIn>
             <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">The FluxFut Network</h2>
             <p className="text-center text-blue-100/50 text-base mb-8 sm:mb-16 max-w-xl mx-auto">
-              Six channels. One mission. Follow everywhere to stay ahead of the meta.
+              Three TikToks, YouTube, Instagram and X. Pick your platform.
             </p>
           </FadeIn>
           <StaggerContainer>
@@ -170,9 +170,9 @@ export default function Home() {
       <section className="py-12 sm:py-24 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">Join The Community</h2>
+            <h2 className="text-3xl sm:text-5xl font-semibold text-center mb-3">The Discord</h2>
             <p className="text-center text-blue-100/50 text-base mb-8 sm:mb-16 max-w-xl mx-auto">
-              Two tiers. One elite EAFC community. Pick the access that fits you.
+              Free to join. Upgrade to premium when you want everything.
             </p>
           </FadeIn>
           <StaggerContainer>
@@ -204,7 +204,7 @@ export default function Home() {
                 <div className="flex flex-col h-full p-8 sm:p-10 rounded-2xl border border-blue-400/25 bg-gradient-to-b from-blue-500/[0.12] to-blue-500/[0.03] relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/15 rounded-full blur-2xl pointer-events-none" />
                   <div className="relative z-10 flex flex-col h-full">
-                    <span className="inline-block px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-medium tracking-wide mb-6 w-fit shadow-[0_0_20px_rgba(59,130,246,0.4)]">✦ Premium</span>
+                    <span className="inline-block px-3 py-1 rounded-full bg-blue-500 text-white text-xs font-medium tracking-wide mb-6 w-fit shadow-[0_0_20px_rgba(59,130,246,0.4)]">Premium</span>
                     <h3 className="text-2xl font-semibold mb-1">Premium Discord</h3>
                     <p className="text-4xl font-semibold text-white mt-2 mb-6">£9.99<span className="text-lg text-blue-100/50 font-normal">/mo</span></p>
                     <ul className="space-y-3 mb-10 flex-1">
@@ -239,9 +239,9 @@ export default function Home() {
       {/* CTA */}
       <section className="py-14 sm:py-32 px-4 sm:px-6 text-center border-t border-blue-400/10">
         <FadeIn>
-          <h2 className="text-4xl sm:text-5xl font-semibold mb-6">Ready to Dominate EAFC?</h2>
+          <h2 className="text-4xl sm:text-5xl font-semibold mb-6">Ready to step up?</h2>
           <p className="text-blue-100/70 text-lg mb-10 max-w-xl mx-auto">
-            Join the FluxFut ecosystem and gain the tactical edge over your competition.
+            Everything you need is already here.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href={LINKS.discordFree} target="_blank" rel="noopener noreferrer"><Button>Join the Discord</Button></a>
@@ -255,7 +255,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           <div className="col-span-2 md:col-span-1">
             <p className="font-semibold text-white mb-2">FluxFut</p>
-            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">Elite EAFC tactics, trading & competitive gameplay.</p>
+            <p className="text-blue-100/40 text-xs leading-relaxed max-w-[180px]">EAFC tactics, trading and content.</p>
           </div>
           <div>
             <h4 className="font-medium text-white mb-4">Socials</h4>
