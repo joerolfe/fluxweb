@@ -7,7 +7,6 @@ import FadeUp from "../components/FadeUp";
 import SectionDivider from "../components/SectionDivider";
 import Particles from "../components/Particles";
 import Button from "../components/Button";
-import PageTransition from "../components/PageTransition";
 
 const GUMROAD = "https://fluxfut.gumroad.com/l/blueprint"; // ← update to direct product link when live
 
@@ -45,7 +44,6 @@ const faqs = [
 
 export default function StorePage() {
   return (
-    <PageTransition>
     <main className="relative text-white pt-20 overflow-hidden">
 
       <div className="fixed inset-0 -z-10 overflow-hidden">
@@ -193,12 +191,14 @@ export default function StorePage() {
         <FadeIn>
           <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { icon: "🎮", title: "Content Creators", desc: "You want to build an audience around gaming or any niche but don't know where to start." },
-              { icon: "📈", title: "Aspiring Entrepreneurs", desc: "You want to turn a passion into income through digital products and community building." },
-              { icon: "🚀", title: "Complete Beginners", desc: "Zero followers, zero experience. This guide starts from absolute scratch and holds nothing back." },
+              { icon: <ControllerIcon />, title: "Content Creators", desc: "You want to build an audience around gaming or any niche but don't know where to start." },
+              { icon: <TrendingIcon />, title: "Aspiring Entrepreneurs", desc: "You want to turn a passion into income through digital products and community building." },
+              { icon: <RocketIcon />, title: "Complete Beginners", desc: "Zero followers, zero experience. This guide starts from absolute scratch and holds nothing back." },
             ].map((item) => (
               <div key={item.title} className="p-7 rounded-2xl border border-blue-400/10 bg-gradient-to-b from-blue-500/[0.06] to-transparent text-center hover:border-blue-400/25 transition-all duration-300">
-                <p className="text-3xl mb-3">{item.icon}</p>
+                <div className="flex justify-center mb-4">
+                  <div className="p-3 rounded-xl bg-white/[0.06] border border-white/[0.08] text-blue-300">{item.icon}</div>
+                </div>
                 <p className="font-semibold text-white mb-2">{item.title}</p>
                 <p className="text-blue-100/55 text-sm leading-relaxed">{item.desc}</p>
               </div>
@@ -271,7 +271,6 @@ export default function StorePage() {
       </footer>
 
     </main>
-    </PageTransition>
   );
 }
 
@@ -307,6 +306,15 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 import React from "react";
 
+function ControllerIcon() {
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12h4m-2-2v4m7-2h.01M17 10h.01M5.5 7h13a2.5 2.5 0 012.5 2.5v5A2.5 2.5 0 0118.5 17h-13A2.5 2.5 0 013 14.5v-5A2.5 2.5 0 015.5 7z"/></svg>;
+}
+function TrendingIcon() {
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.5 4.5 6.75-7.5"/><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9.75h5.25v5.25"/></svg>;
+}
+function RocketIcon() {
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.83m2.55-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7a6.006 6.006 0 01-1.232 3.83"/></svg>;
+}
 function BrandIcon() {
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>;
 }

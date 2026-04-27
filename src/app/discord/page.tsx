@@ -9,7 +9,6 @@ import StaggerContainer from "../components/StaggerContainer";
 import SectionDivider from "../components/SectionDivider";
 import Particles from "../components/Particles";
 import Button from "../components/Button";
-import PageTransition from "../components/PageTransition";
 import CountUp from "../components/CountUp";
 
 // ── REPLACE THESE ──────────────────────────────────────────────────────────
@@ -41,7 +40,6 @@ const premiumPerks = [
 
 export default function DiscordPage() {
   return (
-    <PageTransition>
     <main className="relative text-white pt-20 overflow-hidden">
 
       <div className="fixed inset-0 -z-10 overflow-hidden">
@@ -308,7 +306,6 @@ export default function DiscordPage() {
       </footer>
 
     </main>
-    </PageTransition>
   );
 }
 

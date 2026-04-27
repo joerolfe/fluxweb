@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StickyDiscord from "./components/StickyDiscord";
+import ScrollToTop from "./components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     default: "FluxFut — Control the Meta",
     template: "%s | FluxFut",
   },
-  description: "Elite FC26 tactics, market strategies, squad builders and competitive gameplay. Join 27K+ EAFC players in the FluxFut community.",
+  description: "Elite FC26 tactics, market strategies, squad builders and competitive gameplay. Join 34K+ EAFC players in the FluxFut community.",
   keywords: ["FC26", "EAFC", "FluxFut", "FIFA tactics", "FC26 trading", "squad builder", "evolutions", "meta cards"],
   authors: [{ name: "FluxFut" }],
   creator: "FluxFut",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: "FluxFut",
     title: "FluxFut — Control the Meta",
-    description: "Elite FC26 tactics, market strategies and competitive gameplay. Join 27K+ EAFC players.",
+    description: "Elite FC26 tactics, market strategies and competitive gameplay. Join 34K+ EAFC players.",
     images: [
       {
         url: `${BASE_URL}/og-image.png`, // ← add a 1200x630 image to /public/og-image.png
@@ -37,7 +38,6 @@ export const metadata: Metadata = {
     title: "FluxFut — Control the Meta",
     description: "Elite FC26 tactics, market strategies and competitive gameplay.",
     images: [`${BASE_URL}/og-image.png`],
-    creator: "@fluxfut1",
   },
   robots: {
     index: true,
@@ -55,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} bg-[#020617] text-white antialiased`}>
         {children}
         <StickyDiscord />
+        <ScrollToTop />
       </body>
     </html>
   );
